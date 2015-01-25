@@ -1,7 +1,6 @@
 (function($){
   // ページを落とすスクリプト読み込み準備
   function block(){
-    console.log("bolck called");
     var body = $("body");
     body.css("background", "none");
     body.children().remove();
