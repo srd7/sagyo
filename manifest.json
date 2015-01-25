@@ -14,16 +14,21 @@
         "<all_urls>"
       ]
     , "js": [
-        "jquery-2.1.3.min.js"
-      , "injector.js"
+        "js/jquery-2.1.3.min.js"
+      , "js/injector.js"
       ]
     }
   ]
-, "web_accessible_resources": [
-    "executor.js"
-  , "blacklist.json"
-  ]
 , "permissions": [
     "<all_urls>"
+  , "storage"
   ]
+, "browser_action": {
+    "default_icon": "icons/icon16.png"
+  , "default_title": "作業しろ"
+  , "default_popup": "html/popup.html"
+  }
+, "background": {
+    "scripts": ["js/background.js"]
+  }
 }

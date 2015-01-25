@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <style>
+    #popup {
+      width: 150px;
+    }
+    #blacklist {
+      width: 150px;
+      height: 5em;
+      resize: none;
+      padding: 2px;
+      box-sizing: border-box;
+    }
+    #blacklist-toggle {
+      cursor: pointer;
+      padding: 0 5px;
+    }
+    </style>
+  </head>
+  <body>
+    <div id="popup">
+      <label>
+        <input type="checkbox" id="working">作業なう
+      </label>
+      <p id="blacklist-toggle">ブロックするサイト ▼</p>
+      <div id="black">
+        <p>改行で区切ってください。<br>入力例: //twitter.com/</p>
+        <textarea id="blacklist"></textarea>
+        <button id="updateList">ブロックサイトを更新</button>
+      </div>
+    </div>
+    <script type="text/javascript" src="/js/jquery-2.1.3.min.js"></script>
+    <script type="text/javascript" src="/js/popup.js"></script>
+  </body>
+</html>
